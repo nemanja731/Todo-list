@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 600px;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(193, 247, 193);
+  background-color: rgb(238, 83, 83);
+  color: rgb(245, 244, 244);
+  font-weight: bold;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+.grid-header {
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: grid;
+  grid-template-columns: 450px 100px;
+}
+
+#input {
+  border-style: none;
+  border-radius: 2px;
+  height: 25px;
+  padding-left:10px;
+}
+
+#input::placeholder {
+  color: rgb(164, 162, 162);
+}
+
+#input:focus {
+  outline: none;
+}
+
+#add {
+  border-style: none;
+  border-radius: 2px;
+  margin-left: -2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#add:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+#add:active {
+  background-color: rgb(233, 236, 236);
+}
+
+.item {
+  background-color: rgb(243, 246, 246);
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background-color: rgb(225, 225, 225);
+}
+
+.item-text {
+  margin: auto;
+  padding-left: 26px;
+  flex:1;
+}
+
+.item-button {
+  width: 50px;
+  transition: background-color 0.2s;
+  border-style: none;
+  cursor: pointer;
+}
+
+.item-button:hover {
+  background-color: rgb(238, 83, 83);
+}
